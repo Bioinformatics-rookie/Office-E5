@@ -5,7 +5,7 @@ name: Office E5
 
 on:
   schedule:
-    - cron: '0 0/6 15 1/2 ?'
+    - cron: '0 0/12 ?'
   release:
     types: [published]
   watch:
@@ -37,8 +37,8 @@ jobs:
         tail run.log   
     - name: Commit log
       env:
-        NAME: merrycodes
-        EMAIL: merrycodes@163.com
+        NAME: Shizhao Zhou
+        EMAIL: zhoushizhao@mail.kib.ac.cn
       run: |
         git config --global user.name "$NAME"
         git config --global user.email "$EMAIL"
