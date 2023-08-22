@@ -37,7 +37,7 @@ jobs:
     - name: Commit log
       env:
         NAME: Shizhao Zhou
-        EMAIL: zhoushizhao@mail.kib.ac.cn
+        EMAIL: zhoushizhao1995@outlook.com
       run: |
         git config --global user.name "$NAME"
         git config --global user.email "$EMAIL"
